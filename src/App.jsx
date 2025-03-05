@@ -1,17 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Login from "./login";
+// import Home from "./Home";
+import Practice from './components/practice1'
+// import Header from "./components/header";
+// import Footer from "./components/Footer";
+// import Foods from "./components/Foods";
 
-function App() {
-  const [count, setCount] = useState(0)
+import Excercise from './components/Excercise'
 
+import Number from './excercises/Number';
+import Header from "./components/youtube/Header";
+import  Content  from "./components/youtube/Content";
+import Footer from './components/youtube/Footer'
+import Home from './components/firebase/Home'
+
+
+
+
+
+const App = () => {
+  // let user='karthik';
   return (
     <>
-    <div><h1>Welcome to home page</h1></div>
-    
-    </>
-  )
-}
+    {/* // <Routes>
+    //   <Route path="/" element={<Login />} />
+    //   <Route path="/home" element={<Home />} />
+    // </Routes>
+    // <Practice/> */}
+    {/* <Header  name={'john'} user={user}/>
+   
+    <Footer user='karthik'/> */}
 
-export default App
+    {/* <Foods/> */}
+    {/* <Excercise/> */}
+    {/* <Number/> */}
+    {/* <Header/>
+    <Content/>
+    <Footer/> */}
+    <Home/>
+    </>
+  );
+};
+
+export default App;
