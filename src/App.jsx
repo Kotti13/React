@@ -14,6 +14,8 @@ import Header from "./components/youtube/Header";
 import  Content  from "./components/youtube/Content";
 import Footer from './components/youtube/Footer'
 import Home from './components/firebase/Home'
+import TodoApp from "./excercises/Todoapp/Todo";
+import '../src/css/Todo.css'
 
 
 
@@ -38,7 +40,8 @@ const App = () => {
     {/* <Header/>
     <Content/>
     <Footer/> */}
-    <Home/>
+    {/* <Home/> */}
+    <TodoApp/>
     </>
   );
 };

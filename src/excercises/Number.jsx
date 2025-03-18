@@ -4,11 +4,11 @@ function Number() {
   const [code, setCode] = useState(""); 
   const [sample, setData] = useState([]); 
 
-  const submit = (e) => {
-    e.preventDefault();
+  const submit = (event) => {
+    event.preventDefault();
 
     const num = Number(code); 
-    if (num > 0 && num <= 50) {
+    if (num > 0 || num <= 50) {
       setData([...sample, num]);
       setCode("");
     } else {
